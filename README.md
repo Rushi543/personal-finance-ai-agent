@@ -3,7 +3,7 @@
 ![tag:domain/finance](https://img.shields.io/badge/domain-finance-4CAF50)
 
 # 💸 AI Finance Assistant
-
+agent address: agent1qg7hszcwltxxms8a6uvesqztnytt3pngfzsvtzu8acfpc6gs0mglvwruhs0
 **Description**:  
 This AI Agent helps users analyze personal financial transactions, identify spending habits, and generate insights using natural language queries. It supports category-wise breakdowns, trend visualizations, and budgeting guidance.
 
@@ -76,3 +76,24 @@ async def handle_response(ctx: Context, sender: str, msg: Message):
 if __name__ == "__main__":
     agent.run()
 ```
+## Local Agent
+- Install the necessary packages:
+
+```pip install requests uagents```
+
+To interact with this agent from a local agent instead, replace agent = Agent() in the above with:
+
+```
+agent = Agent(
+    name="user",
+    endpoint="http://localhost:8000/submit",
+)
+```
+
+Run the agent:
+
+```python agent.py```
+
+## Local Setup
+- run requirements.txt
+- create a .env to insert gemini api key
