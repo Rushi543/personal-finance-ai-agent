@@ -1,0 +1,12 @@
+openai
+uagents
+pydantic
+dotenv
+requests
+pandas 
+matplotlib 
+plotly 
+streamlit 
+google-generativeai 
+openpyxl
+kaleido
