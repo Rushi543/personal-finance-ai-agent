@@ -4,6 +4,7 @@
 
 # 💸 AI Finance Assistant
 agent address: agent1qg7hszcwltxxms8a6uvesqztnytt3pngfzsvtzu8acfpc6gs0mglvwruhs0
+
 **Description**:  
 This AI Agent helps users analyze personal financial transactions, identify spending habits, and generate insights using natural language queries. It supports category-wise breakdowns, trend visualizations, and budgeting guidance.
 
@@ -94,6 +95,22 @@ Run the agent:
 
 ```python agent.py```
 
-## Local Setup
-- run requirements.txt
-- create a .env to insert gemini api key
+🚀 Local Setup
+
+- Install dependencies
+
+Ensure Python 3.8+ is installed. Then:
+```
+pip install -r requirements.txt
+```
+- Create a .env file
+
+Add your Gemini API Key to the root .env file:
+```
+GEMINI_API_KEY=your_actual_api_key_here
+```
+- Run the app
+```
+python assistant.py
+python agent.py
+```
